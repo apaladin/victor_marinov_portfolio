@@ -748,82 +748,62 @@
     };
 
     const PROJECTS = [
-      // SaaS & Tech
-      { name: "Wati", url: "https://www.wati.io/", cat: "saas", country: "Global", featured: true, desc: "AI-powered customer engagement platform: WhatsApp Business API, omnichannel inbox, chatbots and broadcast campaigns." },
-      { name: "Clipboard Health", url: "https://www.clipboardhealth.com/", cat: "saas", country: "US", desc: "Healthcare staffing marketplace covering open shifts across 6,500+ US workplaces." },
-      { name: "Skileo", url: "https://www.skileo.com/", cat: "saas", country: "Global", desc: "All-in-one workplace suite for employee management, leave tracking, recruiting, invoicing and expenses." },
-      { name: "Remote Ops Solutions", url: "https://remoteops.solutions/", cat: "saas", country: "Global", desc: "Business process outsourcing that connects companies with top remote talent worldwide." },
-
-      // Food & Wellness
-      { name: "GrubMarket", url: "https://www.grubmarket.com/", cat: "food", country: "US", desc: "Digitally transforming the American food supply chain: B2B ecommerce, ERP software and enterprise AI." },
-      { name: "Flink", url: "https://www.goflink.com/en", cat: "food", country: "DE", app: ["flink-1", "flink-2", "flink-3"], desc: "Quick-commerce grocery delivery in minutes across Germany and the Netherlands." },
-      { name: "Bondi Meal Prep", url: "https://bondimealprep.com.au/", cat: "food", country: "AU", desc: "Healthy, chef-made meal prep with subscriptions and delivery across Sydney." },
-      { name: "Earth Bound", url: "https://earthbound.com.au", cat: "food", country: "AU", desc: "Organic, plant-based meal mixes with separate Australian and US storefronts." },
-      { name: "Le Baroudeur du Vin", url: "https://www.lebaroudeurduvin.com/en-us", cat: "food", desc: "World wine specialist: monthly tasting boxes and 1,500+ wines from 200+ producers." },
-      { name: "Redmond Life", url: "https://living.redmond.com/", cat: "food", country: "US", desc: "Real Salt, clay and Re-Lyte electrolyte products from Redmond, Utah." },
-      { name: "Esprizio", url: "https://drinkesprizio.com/", cat: "food", country: "US", desc: "Sparkling espresso spritz made with fair-trade coffee, real citrus and certified-organic ingredients." },
-      { name: "Recess", url: "https://takearecess.co/", cat: "food", country: "US", desc: "Calming drinks and powders with magnesium and adaptogens, sold through a scroll-animated storefront." },
-      { name: "Form Nutrition", url: "https://formnutrition.com/", cat: "food", country: "UK", desc: "Award-winning vegan protein and supplements on WooCommerce, with subscriptions and bundles." },
-      { name: "Bonsoy", url: "https://bonsoy.com/", cat: "food", country: "AU", desc: "Premium plant-based milks since 1983, with a WooCommerce store for cafés and home." },
-      { name: "MACROS", url: "https://macros.com.au/", cat: "food", country: "AU", desc: "Healthy ready-made meal delivery with dietary filters, meal plans and free shipping across Australia." },
-      { name: "Soulara", url: "https://soulara.com.au/", cat: "food", country: "AU", desc: "Australia's plant-based ready-made meal service: 50+ vegan meals, snacks and drinks delivered to your door." },
-
-      // Bakeries
-      { name: "Make My Cakes", url: "https://makemycakes.co.uk/", cat: "bakery", country: "UK", desc: "100% eggless celebration cakes, handcrafted in Harrow with same-day delivery." },
-      { name: "The Green Bakery", url: "https://thegreenbakery.com.au/", cat: "bakery", country: "AU", desc: "Vegan and gluten-free celebration cakes from North Sydney, with custom orders and delivery." },
-      { name: "Ruwi's Cakes", url: "https://ruwiscakes.com.au/", cat: "bakery", country: "AU", desc: "Melbourne cake shop with themed collections and online ordering for every occasion." },
-
-      // Bridal & ethnic
-      { name: "Peggy Bridal", url: "https://peggybridal.co.uk/", cat: "bridal", country: "UK", mobile: false, desc: "Designer off-the-peg wedding dresses. Find it, love it, take it home the same day." },
-      { name: "Dotty Bridal", url: "https://dottybridal.co.uk/", cat: "bridal", country: "UK", desc: "Bridal boutique for designer wedding dresses, with collections and appointment booking." },
-      { name: "Rivaaz", url: "https://rivaazz.com/", cat: "bridal", country: "IN", desc: "Indian boutique for bridal lehengas, gowns and contemporary women's wear." },
-      { name: "Pakiza Luxe", url: "https://pakizaluxe.com/", cat: "bridal", country: "IN", desc: "One-stop family fashion store for ethnic, formal and wedding wear." },
-      { name: "Andaaz Fashion", url: "https://www.andaazfashion.com/", cat: "bridal", country: "US", desc: "Indian dresses, sarees and lehengas with custom tailoring, shipped across the United States." },
-
-      // Fashion
-      { name: "Todd Snyder", url: "https://www.toddsnyder.com", cat: "fashion", country: "US", featured: true, desc: "New York menswear label. Modern American sportswear, collaborations and a high-volume DTC store." },
-      { name: "Jolie Noire", url: "https://joliexnoire.com/", cat: "fashion", country: "US", desc: "Elevated women's and unisex athleisure brand with seasonal collections." },
-      { name: "ND Renegade", url: "https://www.ndrenegade.com/", cat: "fashion", desc: "Clothing and accessories that celebrate neurodiversity, plus wholesale and resources." },
-      { name: "Classy Cozy Cool", url: "https://classycozycool.com/", cat: "fashion", country: "US", desc: "Made-in-USA women's clothing boutique with seasonal drops and promotions." },
-      { name: "Muscle Nation", url: "https://musclenation.us/", cat: "fashion", country: "US", desc: "US storefront for Australia's leading gym apparel brand: leggings, training wear and supplements." },
-      { name: "Marcella NYC", url: "https://www.marcellanyc.com/", cat: "fashion", country: "US", mobile: false, desc: "New York women's apparel label with modern, minimal essentials and a social mission." },
-      { name: "Isola", url: "https://isolaworld.com/", cat: "fashion", desc: "Swimwear and resort wear brand with seasonal collections and a lookbook-driven store." },
-
-      // Food ingredients & hospitality B2B
-      { name: "Oppenheimer", url: "https://www.oppenheimer.com.au/", cat: "b2b", country: "AU", desc: "Family-owned food ingredient manufacturer and food-service brand house, in business since 1870." },
-      { name: "Oppenheimer Food Equipment", url: "https://oppenheimerfe.com.au/", cat: "b2b", country: "AU", desc: "Wholesale German and Japanese knives, cookware and equipment for chefs and butchers." },
-      { name: "Prolux Ingredients", url: "https://proluxingredients.co.nz/", cat: "b2b", country: "NZ", desc: "Functional ingredients, gelato and food equipment for New Zealand food manufacturers." },
-      { name: "FEI", url: "https://fei.com.au/", cat: "b2b", country: "AU", desc: "Hospitality tableware, buffetware and banquet furniture at factory-direct prices." },
-      { name: "Home Royale", url: "https://homeroyale.com.au/", cat: "b2b", country: "AU", desc: "Premium kitchenware, Japanese and German knives, cookware and dining." },
-
-      // Agriculture
-      { name: "Bhumi Agro Industries", url: "https://bhumiagroindustries.com/", cat: "agri", country: "IN", desc: "Plant growth promoters, fertilizers and crop protection for Indian farmers, sold in Hindi and English." },
-      { name: "Agro Phos India", url: "https://www.agrophos.com/", cat: "agri", country: "IN", desc: "NSE-listed fertilizer manufacturer with investor relations and product catalogue." },
-
-      // Beauty & Skincare
+      // Recent ecommerce work
+      { name: "Rove Concepts", url: "https://www.roveconcepts.com/", cat: "home", country: "CA", featured: true, desc: "Modern and mid-century furniture for living, bedroom and outdoor, sold through a high-volume DTC catalogue across North America." },
+      { name: "Hommey", url: "https://gethommey.com.au/", cat: "home", country: "AU", desc: "Elevated Australian homewares: bedding, bath, robes and everyday essentials." },
+      { name: "MAGZO", url: "https://magzo.com/", cat: "home", country: "US", desc: "Custom-size magnetic and aluminium folding screen doors, shipped from US warehouses to 10,000+ customers." },
+      { name: "margo.rebecca", url: "https://www.margorebecca.com/", cat: "home", country: "US", desc: "Designer mahjong sets, acrylic trays and kids' pajamas by Memphis artist Margo Rebecca." },
+      { name: "The Kindness Company", url: "https://www.thekindnesscompany.com/", cat: "home", country: "US", desc: "Print-only hobby newspapers and greeting cards sold by subscription, with dedicated sales pages for paid traffic." },
       { name: "Reale Actives", url: "https://realeactives.com/", cat: "beauty", country: "US", desc: "Dermatologist-developed acne care: a simple, clinically proven routine for breakout-prone skin." },
       { name: "SONNI", url: "https://sonniskin.com/", cat: "beauty", country: "US", desc: "Mineral-based SPF 40+ and SPF 50+ for face and body, plus post-sun recovery care." },
       { name: "YCODE", url: "https://ycode.co/", cat: "beauty", country: "UK", desc: "Men's skincare built for male skin: a two-minute routine awarded by Esquire and Tatler." },
       { name: "Doe Beauty", url: "https://doebeauty.com/", cat: "beauty", country: "US", desc: "Handcrafted Korean silk lashes, wearable 15+ times, with bundles and subscriptions." },
       { name: "Meow Meow Tweet", url: "https://meowmeowtweet.com/", cat: "beauty", country: "US", desc: "Vegan, plastic-free natural skincare: deodorants, body care and refills." },
       { name: "Kinship", url: "https://lovekinship.com/", cat: "beauty", country: "US", desc: "Dermatologist-tested, natural and cruelty-free skincare for sensitive skin." },
-
-      // Home & Lifestyle
-      { name: "Rove Concepts", url: "https://www.roveconcepts.com/", cat: "home", country: "CA", featured: true, desc: "Modern and mid-century furniture for living, bedroom and outdoor, sold through a high-volume DTC catalogue across North America." },
-      { name: "Hommey", url: "https://gethommey.com.au/", cat: "home", country: "AU", desc: "Elevated Australian homewares: bedding, bath, robes and everyday essentials." },
-      { name: "MAGZO", url: "https://magzo.com/", cat: "home", country: "US", desc: "Custom-size magnetic and aluminium folding screen doors, shipped from US warehouses to 10,000+ customers." },
-      { name: "margo.rebecca", url: "https://www.margorebecca.com/", cat: "home", country: "US", desc: "Designer mahjong sets, acrylic trays and kids' pajamas by Memphis artist Margo Rebecca." },
-      { name: "The Kindness Company", url: "https://www.thekindnesscompany.com/", cat: "home", country: "US", desc: "Print-only hobby newspapers and greeting cards sold by subscription, with dedicated sales pages for paid traffic." },
-
-      // Jewellery & Accessories
+      { name: "Muscle Nation", url: "https://musclenation.us/", cat: "fashion", country: "US", desc: "US storefront for Australia's leading gym apparel brand: leggings, training wear and supplements." },
+      { name: "Marcella NYC", url: "https://www.marcellanyc.com/", cat: "fashion", country: "US", mobile: false, desc: "New York women's apparel label with modern, minimal essentials and a social mission." },
+      { name: "Isola", url: "https://isolaworld.com/", cat: "fashion", desc: "Swimwear and resort wear brand with seasonal collections and a lookbook-driven store." },
+      { name: "Andaaz Fashion", url: "https://www.andaazfashion.com/", cat: "bridal", country: "US", desc: "Indian dresses, sarees and lehengas with custom tailoring, shipped across the United States." },
+      { name: "Esprizio", url: "https://drinkesprizio.com/", cat: "food", country: "US", desc: "Sparkling espresso spritz made with fair-trade coffee, real citrus and certified-organic ingredients." },
+      { name: "Recess", url: "https://takearecess.co/", cat: "food", country: "US", desc: "Calming drinks and powders with magnesium and adaptogens, sold through a scroll-animated storefront." },
+      { name: "Form Nutrition", url: "https://formnutrition.com/", cat: "food", country: "UK", desc: "Award-winning vegan protein and supplements on WooCommerce, with subscriptions and bundles." },
+      { name: "Bonsoy", url: "https://bonsoy.com/", cat: "food", country: "AU", desc: "Premium plant-based milks since 1983, with a WooCommerce store for cafés and home." },
+      { name: "MACROS", url: "https://macros.com.au/", cat: "food", country: "AU", desc: "Healthy ready-made meal delivery with dietary filters, meal plans and free shipping across Australia." },
+      { name: "Soulara", url: "https://soulara.com.au/", cat: "food", country: "AU", desc: "Australia's plant-based ready-made meal service: 50+ vegan meals, snacks and drinks delivered to your door." },
       { name: "Camille Brinch", url: "https://camillebrinch.com/", cat: "jewellery", country: "DK", desc: "Raw, feminine jewellery in sterling silver and 22-carat gold plate, shipping across Europe." },
       { name: "Aks Mathur", url: "https://www.aksmathur.com/", cat: "jewellery", desc: "Luxury handmade leather handbags, totes, wallets and backpacks in a minimal aesthetic." },
-
-      // Digital Products
       { name: "PeachCreme", url: "https://www.peachcreme.com/", cat: "digital", desc: "Premium calligraphy and handwritten fonts for branding, logos and wedding invitations." },
       { name: "Freelee the Banana Girl", url: "https://thebananagirl.com/", cat: "digital", desc: "Official store for the Raw Till 4 creator: ebooks, meal plans and coaching programmes." },
 
-      // Finance & Legal
+      // Earlier work
+      { name: "Wati", url: "https://www.wati.io/", cat: "saas", country: "Global", featured: true, desc: "AI-powered customer engagement platform: WhatsApp Business API, omnichannel inbox, chatbots and broadcast campaigns." },
+      { name: "Clipboard Health", url: "https://www.clipboardhealth.com/", cat: "saas", country: "US", desc: "Healthcare staffing marketplace covering open shifts across 6,500+ US workplaces." },
+      { name: "Skileo", url: "https://www.skileo.com/", cat: "saas", country: "Global", desc: "All-in-one workplace suite for employee management, leave tracking, recruiting, invoicing and expenses." },
+      { name: "Remote Ops Solutions", url: "https://remoteops.solutions/", cat: "saas", country: "Global", desc: "Business process outsourcing that connects companies with top remote talent worldwide." },
+      { name: "GrubMarket", url: "https://www.grubmarket.com/", cat: "food", country: "US", desc: "Digitally transforming the American food supply chain: B2B ecommerce, ERP software and enterprise AI." },
+      { name: "Flink", url: "https://www.goflink.com/en", cat: "food", country: "DE", app: ["flink-1", "flink-2", "flink-3"], desc: "Quick-commerce grocery delivery in minutes across Germany and the Netherlands." },
+      { name: "Bondi Meal Prep", url: "https://bondimealprep.com.au/", cat: "food", country: "AU", desc: "Healthy, chef-made meal prep with subscriptions and delivery across Sydney." },
+      { name: "Earth Bound", url: "https://earthbound.com.au", cat: "food", country: "AU", desc: "Organic, plant-based meal mixes with separate Australian and US storefronts." },
+      { name: "Le Baroudeur du Vin", url: "https://www.lebaroudeurduvin.com/en-us", cat: "food", desc: "World wine specialist: monthly tasting boxes and 1,500+ wines from 200+ producers." },
+      { name: "Redmond Life", url: "https://living.redmond.com/", cat: "food", country: "US", desc: "Real Salt, clay and Re-Lyte electrolyte products from Redmond, Utah." },
+      { name: "Make My Cakes", url: "https://makemycakes.co.uk/", cat: "bakery", country: "UK", desc: "100% eggless celebration cakes, handcrafted in Harrow with same-day delivery." },
+      { name: "The Green Bakery", url: "https://thegreenbakery.com.au/", cat: "bakery", country: "AU", desc: "Vegan and gluten-free celebration cakes from North Sydney, with custom orders and delivery." },
+      { name: "Ruwi's Cakes", url: "https://ruwiscakes.com.au/", cat: "bakery", country: "AU", desc: "Melbourne cake shop with themed collections and online ordering for every occasion." },
+      { name: "Peggy Bridal", url: "https://peggybridal.co.uk/", cat: "bridal", country: "UK", mobile: false, desc: "Designer off-the-peg wedding dresses. Find it, love it, take it home the same day." },
+      { name: "Dotty Bridal", url: "https://dottybridal.co.uk/", cat: "bridal", country: "UK", desc: "Bridal boutique for designer wedding dresses, with collections and appointment booking." },
+      { name: "Rivaaz", url: "https://rivaazz.com/", cat: "bridal", country: "IN", desc: "Indian boutique for bridal lehengas, gowns and contemporary women's wear." },
+      { name: "Pakiza Luxe", url: "https://pakizaluxe.com/", cat: "bridal", country: "IN", desc: "One-stop family fashion store for ethnic, formal and wedding wear." },
+      { name: "Todd Snyder", url: "https://www.toddsnyder.com", cat: "fashion", country: "US", featured: true, desc: "New York menswear label. Modern American sportswear, collaborations and a high-volume DTC store." },
+      { name: "Jolie Noire", url: "https://joliexnoire.com/", cat: "fashion", country: "US", desc: "Elevated women's and unisex athleisure brand with seasonal collections." },
+      { name: "ND Renegade", url: "https://www.ndrenegade.com/", cat: "fashion", desc: "Clothing and accessories that celebrate neurodiversity, plus wholesale and resources." },
+      { name: "Classy Cozy Cool", url: "https://classycozycool.com/", cat: "fashion", country: "US", desc: "Made-in-USA women's clothing boutique with seasonal drops and promotions." },
+      { name: "Oppenheimer", url: "https://www.oppenheimer.com.au/", cat: "b2b", country: "AU", desc: "Family-owned food ingredient manufacturer and food-service brand house, in business since 1870." },
+      { name: "Oppenheimer Food Equipment", url: "https://oppenheimerfe.com.au/", cat: "b2b", country: "AU", desc: "Wholesale German and Japanese knives, cookware and equipment for chefs and butchers." },
+      { name: "Prolux Ingredients", url: "https://proluxingredients.co.nz/", cat: "b2b", country: "NZ", desc: "Functional ingredients, gelato and food equipment for New Zealand food manufacturers." },
+      { name: "FEI", url: "https://fei.com.au/", cat: "b2b", country: "AU", desc: "Hospitality tableware, buffetware and banquet furniture at factory-direct prices." },
+      { name: "Home Royale", url: "https://homeroyale.com.au/", cat: "b2b", country: "AU", desc: "Premium kitchenware, Japanese and German knives, cookware and dining." },
+      { name: "Bhumi Agro Industries", url: "https://bhumiagroindustries.com/", cat: "agri", country: "IN", desc: "Plant growth promoters, fertilizers and crop protection for Indian farmers, sold in Hindi and English." },
+      { name: "Agro Phos India", url: "https://www.agrophos.com/", cat: "agri", country: "IN", desc: "NSE-listed fertilizer manufacturer with investor relations and product catalogue." },
       { name: "Oppenheimer & Co.", url: "https://www.oppenheimer.com/", cat: "services", country: "US", desc: "Wealth management, capital markets and investment banking firm." },
       { name: "Powers Law Group", url: "https://rubypowerslaw.com/", cat: "services", country: "US", desc: "Houston immigration and estate planning law firm with online consultation booking." },
     ];
